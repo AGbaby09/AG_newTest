@@ -2,192 +2,201 @@
     box-sizing: border-box;
     margin: 0px;
 }
-body{
-    background-image: linear-gradient(125deg,#192a56,#192a56,  #192a56,#273c75, #192a56,#273c75,#192a56, #222f3e);
-    ;
-    background-repeat: no-repeat;
-    height: 101vh;
-    background-size: 400%;
-    animation: bg 15s infinite;
-  
-}
-nav{
-    background-color: #192a56;
-}
-nav ul{
-    position: relative;
+@media only screen and (max-width: 1507px){
+    /*Tablets [601px -> 1200px]*/
+
+    body{
+        background-image: linear-gradient(125deg,#192a56,#192a56,  #192a56,#273c75, #192a56,#273c75,#192a56, #222f3e);
+        ;
+        background-repeat: no-repeat;
+        height: 101vh;
+        background-size: 400%;
+        animation: bg 15s infinite;
+      
+    }
+    nav{
+        background-color: #192a56;
+    }
+    nav ul{
+        position: relative;
+        
+        display: inline;
+        float: right;
+        width: auto;
+        float: right;
+        justify-content: space-between;
+    }
+    .link{
+        padding: 0px 18px;
+        cursor: pointer;
+        font-size: 1.2em;
+        color: grey;
+        text-shadow: 0px 0px 1px #aaa;
+    }
+    .link:hover{
+        /* From https://css.glass */
+        background: rgba(194, 54, 22, 0.45);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        color: white;
+        text-shadow: 0px 0px 2px black;
+    }
+    #logo{
+        float:left;
+    }
+    #admin{
+        color: #c23616;
+        font-size: larger;
+        background-color: #192a56;
+        transition: all 1s ease-out;
+        text-shadow: none;
+    }
+    #admin:hover{
+        position: relative;
+        animation: rise 1.5s infinite;
+        
+    }
+    #glass{
+        /* From https://css.glass */
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        background: rgba(34, 47, 62, 0.6);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.2px);
+        -webkit-backdrop-filter: blur(4.2px);
+        border: 1px solid rgba(34, 47, 62, 0.05);
+        width: 70%;
+        height: 40vh;
+    }
+    #over_glass{
+        
+        /* From https://css.glass */
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        width: 70%;
+        height: 40vh;
+    }
+    #over_glass h1{
+        opacity: 0.8;
+        color: black;
+        text-align: center;position: relative;
+        top: 5%;
+        left:5%;
+        font-size: 2em;
+        color:silver;
+        text-shadow: 0px 0px 3px black;
+        width: fit-content;
+    }
+    #over_glass p{
+        color: grey;
+        width: 40%;
+        margin-left: 50px;
+        margin-top: 20px;
+        font-size: 1.2em;
+        animation-delay: ;
+    }
+    #list-text{
+        position: absolute;
+        text-align: center;
+        height: 18vh;
+        width: 33%;
+    }
+    #list-text h1{
+        text-align: center;
+        color: darkred;
+        text-shadow: 0px 0px 3px black;
+        font-size: 17em;
+        margin-right: 200px;
+        padding-left: 15.5px;
+    }
+    #brackets{
+        display: flex;
+        background-color: #b33939;
+        position: absolute;
+        left: 145%;
+        bottom: 9%;
+        background-color: transparent;
+    }
+    #list-text ul{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        background-color: rgb(39, 60, 117, 0.3);
+        left: 15%;
+        top: -5px;
+        border-radius: 10px;
+    }
+    #list{
+        position: relative;
+        color: #051627;
+        text-shadow: 0px 0px 2px black;
+        width: 150px;
+        font-size: 0.9em;
+        text-align: center;
+    }
     
-    display: inline;
-    float: right;
-    width: auto;
-    float: right;
-    justify-content: space-between;
-}
-.link{
-    padding: 0px 18px;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: grey;
-    text-shadow: 0px 0px 1px #aaa;
-}
-.link:hover{
-    /* From https://css.glass */
-    background: rgba(194, 54, 22, 0.45);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: white;
-    text-shadow: 0px 0px 2px black;
-}
-#logo{
-    float:left;
-}
-#admin{
-    color: #c23616;
-    font-size: larger;
-    background-color: #192a56;
-    transition: all 1s ease-out;
-    text-shadow: none;
-}
-#admin:hover{
-    position: relative;
-    animation: rise 1.5s infinite;
+    #choose{
+        position: relative;
+        top: 48vh;
+        width: 100%;
+        height:20vh;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #choose .col{
+        display: flex;
+        height:20vh;
+    }
+    #choose .one{
+        border-right:2px solid darkred;
+    }
+    #choose .one a{
+        position: relative;
+        left: 200px;
     
-}
-#glass{
-    /* From https://css.glass */
-    position: absolute;
-    left: 15%;
-    top: 15%;
-    background: rgba(34, 47, 62, 0.6);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.2px);
-    -webkit-backdrop-filter: blur(4.2px);
-    border: 1px solid rgba(34, 47, 62, 0.05);
-    width: 70%;
-    height: 40vh;
-}
-#over_glass{
+    }
+    #choose .two a{
+        position: relative;
+        right: 200px;
+    }
+    #choose .two{
+        border-left:2px solid darkred;
+    }
+    #choose .col a{
+        text-align: center;
+        color: #353b48;
+        background-image: -webkit-linear-gradient(270deg, #ED4C67 5%, darkred 95%);
+        background-clip:text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+        margin: auto;
+        font-size: 50px;
+        font-weight: 700;
+        width: fit-content;
+        height: 15vh;
+        padding-top: 15px;
+        transition: all 0.2s ease-in;
+    }
+    #choose .col a:hover{
+        font-size: 3.5em;
+    }
+    footer{
+        position: relative;
+        background-color: #051627;
+    }
     
-    /* From https://css.glass */
-    position: absolute;
-    left: 15%;
-    top: 15%;
-    width: 70%;
-    height: 40vh;
-}
-#over_glass h1{
-    opacity: 0.8;
-    color: black;
-    text-align: center;position: relative;
-    top: 5%;
-    left:5%;
-    font-size: 2em;
-    color:silver;
-    text-shadow: 0px 0px 3px black;
-    width: fit-content;
-}
-#over_glass p{
-    color: grey;
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 1.2em;
-    animation-delay: ;
-}
-#list-text{
-    position: absolute;
-    text-align: center;
-    height: 18vh;
-    width: 33%;
-}
-#list-text h1{
-    text-align: center;
-    color: darkred;
-    text-shadow: 0px 0px 3px black;
-    font-size: 17em;
-    margin-right: 200px;
-    padding-left: 15.5px;
-}
-#brackets{
-    display: flex;
-    background-color: #b33939;
-    position: absolute;
-    left: 145%;
-    bottom: 9%;
-    background-color: transparent;
-}
-#list-text ul{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    background-color: rgb(39, 60, 117, 0.3);
-    left: 15%;
-    top: -5px;
-    border-radius: 10px;
-}
-#list{
-    position: relative;
-    color: #051627;
-    text-shadow: 0px 0px 2px black;
-    width: 150px;
-    font-size: 0.9em;
-    text-align: center;
+
+
+
 }
 
-#choose{
-    position: relative;
-    top: 48vh;
-    width: 100%;
-    height:20vh;
-    margin-left: 0px;
-    display: flex;
-    justify-content: space-evenly;
-}
-#choose .col{
-    display: flex;
-    height:20vh;
-}
-#choose .one{
-    border-right:2px solid darkred;
-}
-#choose .one a{
-    position: relative;
-    left: 200px;
-
-}
-#choose .two a{
-    position: relative;
-    right: 200px;
-}
-#choose .two{
-    border-left:2px solid darkred;
-}
-#choose .col a{
-    text-align: center;
-    color: #353b48;
-    background-image: -webkit-linear-gradient(270deg, #ED4C67 5%, darkred 95%);
-    background-clip:text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    margin: auto;
-    font-size: 50px;
-    font-weight: 700;
-    width: fit-content;
-    height: 15vh;
-    padding-top: 15px;
-    transition: all 0.2s ease-in;
-}
-#choose .col a:hover{
-    font-size: 3.5em;
-}
-footer{
-    position: relative;
-    background-color: #051627;
-}
 
 
 
