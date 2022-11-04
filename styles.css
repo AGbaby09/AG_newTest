@@ -57,6 +57,7 @@
         color: #c23616;
         font-size: larger;
         transition: all 1s ease-out;
+        background-color: transparent;
         text-shadow: none;
         font-weight: 600;
     }
