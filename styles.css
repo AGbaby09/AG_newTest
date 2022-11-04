@@ -96,6 +96,25 @@ nav ul{
     font-size: 1.2em;
     animation-delay: ;
 }
+#list-text{
+    position: absolute;
+    text-align: center;
+    height: 18vh;
+    width: 33%;
+}
+#list-text ul{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+#list{
+    position: relative;
+    color: grey;
+    width: 150px;
+    font-size: 0.9em;
+}
+
 #choose{
     position: relative;
     top: 48vh;
@@ -147,6 +166,7 @@ nav ul{
 footer{
     position: relative;
 }
+
 
 
 /* animations */
