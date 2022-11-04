@@ -29,6 +29,8 @@
         justify-content: space-between;
     }
     #logo{
+        position: relative;
+        top: 7px;
         font-family: 'Barlow Condensed', sans-serif;
     }
     #logo span{
@@ -177,12 +179,7 @@
     }
     #choose .col a{
         text-align: center;
-        color: #353b48;
-        background-image: -webkit-linear-gradient(270deg, #ED4C67 5%, darkred 95%);
-        background-clip:text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
+        color: rgba(0, 0, 0, 0.2);
         text-decoration: none;
         margin: auto;
         font-size: 50px;
@@ -194,6 +191,7 @@
     }
     #choose .col a:hover{
         font-size: 3.5em;
+        color: rgba(0, 0, 0, 0.5);
     }
     footer{
         position: absolute;
@@ -224,6 +222,42 @@
 
 
 /* animations */
+@keyframes bounce-in-bottom {
+    0% {
+      transform: translateY(35px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(27px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(20px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(2px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+}
 @keyframes show{
     0%{
         opacity: 0;
