@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -9,13 +11,13 @@
         background-image: linear-gradient(125deg,#192a56,#192a56,  #192a56,#273c75, #192a56,#273c75,#192a56, #222f3e);
         ;
         background-repeat: no-repeat;
-        height: 101vh;
+        height: 100vh;
         background-size: 400%;
         animation: bg 15s infinite;
       
     }
     nav{
-        background-color: #192a56;
+        background-color: #0e172d;
     }
     nav ul{
         position: relative;
@@ -25,6 +27,12 @@
         width: auto;
         float: right;
         justify-content: space-between;
+    }
+    #logo{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #logo span{
+        color:#222f3e;
     }
     .link{
         padding: 0px 18px;
@@ -48,9 +56,9 @@
     #admin{
         color: #c23616;
         font-size: larger;
-        background-color: #192a56;
         transition: all 1s ease-out;
         text-shadow: none;
+        font-weight: 600;
     }
     #admin:hover{
         position: relative;
@@ -97,7 +105,6 @@
         margin-left: 50px;
         margin-top: 20px;
         font-size: 1.2em;
-        animation-delay: ;
     }
     #list-text{
         position: absolute;
@@ -141,7 +148,7 @@
     
     #choose{
         position: relative;
-        top: 48vh;
+        top: 52vh;
         width: 100%;
         height:20vh;
         margin-left: 0px;
@@ -188,10 +195,24 @@
         font-size: 3.5em;
     }
     footer{
-        position: relative;
-        background-color: #051627;
+        position: absolute;
+        height: 5vh;
+        left: 6%;
+        bottom: 5%;
+        text-align: center;
     }
-    
+    footer .row{
+        position: relative;
+        height: inherit;
+    }
+    footer .row .col a{
+        top: 6px;
+        position: relative;
+        text-decoration: none;
+        color: #c23616;
+        font-size: 1em;
+        font-weight: 600;
+    }
 
 
 
